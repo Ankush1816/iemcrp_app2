@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/teacher-home',
-      routes: {
-        '/': (context) => Wrapper(),
-        '/authenticate': (context) => Authenticate(),
-        '/student-home': (context) => Student_home(),
-        '/teacher-home': (context) => Teacher_home(),
-      },
+      home: Student_home(),
+     // routes: {
+     //   '/': (context) => Wrapper(),
+     //   '/authenticate': (context) => Authenticate(),
+     //   '/Student-home': (context) => Student_home(),
+      //  '/teacher-home': (context) => Teacher_home(),
+     // },
 
       // home: Wrapper(),
     );
