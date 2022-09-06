@@ -6,40 +6,85 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Login',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 33,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.blue[700],
+        elevation: 0,
+      ),
       backgroundColor: Colors.blueAccent,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          TextButton.icon(
-            onPressed: () {
-              Navigator.pushNamed(context, '/authenticate');
-
-            },
-            icon: Icon(Icons.person, color: Colors.white),
-            label: Text(
-              'Login as Teacher',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 23,
-              ),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(1, 150, 1, 0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/authenticate');
+                  },
+                  icon: Image.asset('lib/assets/images/teacher_avatar.png'),
+                  iconSize: 150,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  'Teacher',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          TextButton.icon(
-            onPressed: () {
-              Navigator.pushNamed(context, '/authenticate');
-
-            },
-            icon: Icon(Icons.person, color: Colors.white),
-            label: Text(
-              'Login as Student',
-              style: TextStyle(color: Colors.white, fontSize: 23),
+            SizedBox(
+              width: 50,
             ),
-          )
-        ],
+            Column(
+              children: [
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/authenticate');
+                  },
+                  child: CircleAvatar(
+                    backgroundColor: Color.fromARGB(255, 86, 177, 224),
+                    radius: 80,
+                    child: Image.asset(
+                      'lib/assets/images/student_avatar.png',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  'Student',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+
+            SizedBox(
+              height: 20,
+            ),
+          ],
+        ),
       ),
     );
   }

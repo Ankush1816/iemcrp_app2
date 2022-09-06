@@ -10,7 +10,9 @@ class Teacher_home extends StatefulWidget {
 
 class _Teacher_homeState extends State<Teacher_home> {
 
-  Teacher_details _td =new Teacher_details(name: "Kajari Sur", id: 123);
+  //fetch teacher data from database
+  Teacher_details _td =new Teacher_details(name: "Kajari Sur", id: 123, email: 'kajarisur@iemcal.com', department: 'IT & IOTCSBT');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +29,8 @@ class _Teacher_homeState extends State<Teacher_home> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SizedBox(height: 20,),
+
+          //Create quiz
           InkWell(
             onTap: (){},
             child: Card(
@@ -43,6 +47,33 @@ class _Teacher_homeState extends State<Teacher_home> {
                     letterSpacing: 1,
                     fontFamily: 'OldStandardTT',
                   ),),
+                  SizedBox(height: 20,),
+
+                ],
+              ),
+
+
+            ),
+          ),
+          SizedBox(height: 20,),
+
+          //Attendence Report
+          InkWell(
+            onTap: (){},
+            child: Card(
+              color: Colors.blue[100],
+              shadowColor: Colors.blue[200],
+              child: Column(
+                children: [
+                  SizedBox(height: 20,),
+
+                  Text('Attendence Report',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1,
+                      fontFamily: 'OldStandardTT',
+                    ),),
                   SizedBox(height: 20,),
 
                 ],
