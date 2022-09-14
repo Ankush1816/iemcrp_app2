@@ -58,10 +58,10 @@ class _ProfilePageState extends State<StudentProfile> {
                       hintText: 'Email',
                     ),
                     textfield(
-                      hintText: 'Password',
+                      hintText: 'Enrollment number',
                     ),
                     textfield(
-                      hintText: 'Confirm password',
+                      hintText: 'Department',
                     ),
                     Container(
                       height: 55,
@@ -134,8 +134,8 @@ class HeaderCurvedContainer extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint()..color = Colors.blue;
     Path path = Path()
-      ..relativeLineTo(0, 150)
-      ..quadraticBezierTo(size.width / 2, 225, size.width, 150)
+      ..relativeLineTo(0, 100)
+      ..quadraticBezierTo(size.width / 2, 25, size.width, 50)
       ..relativeLineTo(0, -150)
       ..close();
     canvas.drawPath(path, paint);
