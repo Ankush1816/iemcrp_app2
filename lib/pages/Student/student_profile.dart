@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iemcrp2/pages/Student/Student_details.dart';
 
 class StudentProfile extends StatefulWidget {
   @override
@@ -6,6 +7,8 @@ class StudentProfile extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<StudentProfile> {
+
+  Student_details sd =Student_details(name: 'Anku' ,enrollment: 12020002017007, email: 'ankushchaskraborty@gmail.com', department:'IOTCSBT');
   Widget textfield({@required hintText}) {
     return Material(
       elevation: 4,
@@ -52,7 +55,7 @@ class _ProfilePageState extends State<StudentProfile> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     textfield(
-                      hintText: 'Username',
+                      hintText: 'Name',
                     ),
                     textfield(
                       hintText: 'Email',

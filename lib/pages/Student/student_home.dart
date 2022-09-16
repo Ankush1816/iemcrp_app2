@@ -29,7 +29,9 @@ class _Student_homeState extends State<Student_home> {
         title: Text('Quiz'),
         // leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
         actions: [
-          CircleAvatar(
+          IconButton(onPressed: (){}, icon:Icon(Icons.search)),
+          SizedBox(width: 5,)
+          ,CircleAvatar(
             maxRadius: 20,
             backgroundColor: Colors.yellow,
             child: GestureDetector(

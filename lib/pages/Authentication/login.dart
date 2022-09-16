@@ -32,7 +32,7 @@ class Login extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, '/authenticate');
                   },
-                  icon: Image.network('https://media.4-paws.org/e/8/2/7/e82789b9dc8a986d3b61c0aa7610affeecb93933/VIER%20PFOTEN_2015-04-27_010-1927x1333.jpg'),
+                  icon: Image.network('https://i.postimg.cc/cJ1hg5Ww/teacher-avatar.png'),
                   //icon: Image.asset('lib/assets/images/teacher_avatar.png'),
                   iconSize: 150,
                 ),
@@ -42,7 +42,7 @@ class Login extends StatelessWidget {
                 Text(
                   'Teacher',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color(0xFFdffff),
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -62,7 +62,7 @@ class Login extends StatelessWidget {
                     backgroundColor: Color.fromARGB(255, 86, 177, 224),
                     radius: 80,
                     child:
-                    Image.network('https://i.postimg.cc/tRk1xvb3/skynews-pug-dog-5774995.jpg'),
+                    Image.network('https://i.postimg.cc/pXnDmMng/student-avatar.png'),
                     //Image.asset('lib/assets/images/student_avatar.png',fit: BoxFit.cover),
                   ),
                 ),
