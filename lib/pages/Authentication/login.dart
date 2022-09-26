@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iemcrp2/pages/Authentication/authentication.dart';
+import 'package:iemcrp2/pages/Student/student_home.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -56,7 +58,8 @@ class Login extends StatelessWidget {
               children: [
                 MaterialButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/authenticate');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (Context) => Authenticate()));
                   },
                   child: CircleAvatar(
                     backgroundColor: Color.fromARGB(255, 86, 177, 224),

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "128295518308",
+    "project_id": "iemcrp-badcd",
+    "storage_bucket": "iemcrp-badcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128295518308:android:c9d48aec1f71a05ed15f71",
+        "android_client_info": {
+          "package_name": "com.company.iemcrp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128295518308-dt59io13leq77jav3ql4g77vvljudki9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc2CnHpW4m6yHnOBEK0WTCh56Q1DvZm-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128295518308-dt59io13leq77jav3ql4g77vvljudki9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128295518308:android:a57cd2df52a210f8d15f71",
+        "android_client_info": {
+          "package_name": "com.example.iemcrp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128295518308-dt59io13leq77jav3ql4g77vvljudki9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc2CnHpW4m6yHnOBEK0WTCh56Q1DvZm-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128295518308-dt59io13leq77jav3ql4g77vvljudki9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
